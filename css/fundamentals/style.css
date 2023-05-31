@@ -1,0 +1,45 @@
+/* Universal selector */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: beige; can also work with body */
+}
+
+
+h3 {
+    color: blueviolet
+}
+
+body {
+    background-color: rosybrown;
+}
+
+
+h1 {
+    color: green;
+    text-decoration: underline;
+    text-align: center;
+}
+
+div {
+    border: 4px solid white;
+    width: 300px;
+    height: 600px;
+    background-color: cornflowerblue;
+    padding: 1px 10px 3px 20px;
+    margin: 40px;
+}
+
+.class-one > p {
+    color: red;
+}
+
+#whitePara {
+    color: white;
+}
+
+
+/* BOX MODEL */
+
+/* Each element is a box */
+/* both divs touching each other
+if we inspect, we have the box margin, border, padding */
