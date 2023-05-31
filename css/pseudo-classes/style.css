@@ -1,0 +1,76 @@
+a {
+    text-decoration: none;
+}
+
+/* Change colour of unvisited link */
+
+a:link {
+    color: darkcyan
+}
+
+a:visited {
+    color: red;
+}
+
+/* hover over */
+a:hover {
+    background-color: darksalmon;
+}
+
+/* hold mouse down */
+a:active {
+    background-color: yellow;
+}
+
+/* Note: order matters for pseudo-classes */
+
+button {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border: 3px solid blueviolet;
+    padding: 4px 8px;
+}
+
+button:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+
+div > p:first-of-type {
+    color: cornflowerblue;
+}
+
+div > p:last-of-type {
+    color: chartreuse;
+}
+
+div > p:nth-of-type(2) {
+    color: brown;
+}
+
+div > p:nth-last-of-type(2) {
+    color: blue;
+}
+
+
+input:required {
+    border: 2px solid orange
+}
+
+input {
+    background-color: beige;
+}
+
+input:optional {
+    background-color: aliceblue;
+}
+
+input:disabled {
+    border: 1px solid purple;
+}
+
+input:enabled {
+    background-color: blanchedalmond;
+}
