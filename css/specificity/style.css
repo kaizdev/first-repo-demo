@@ -1,0 +1,38 @@
+
+/* Score of 1 */
+p {
+    color: blueviolet
+}
+
+/* class selector value of 10 */
+.red-para {
+    color: red;
+    font-size: 45px;
+}
+
+/* the red style takes precedence due to specificity */
+/* It doesnt matter what the order is - it depends on the highest score that takes precedence */
+
+/* Value of 100 */
+#greenPara {
+    color: green;
+}
+
+
+
+
+/* 0111 */
+#wrapper div.container {
+    background-color: coral;
+}
+
+/* 0011 - as both element and class select0r -> more important than just a class container */
+div.container{
+    background-color: aquamarine;
+}
+
+/* 0010 */
+.container {
+    background-color: yellow;
+}
+
