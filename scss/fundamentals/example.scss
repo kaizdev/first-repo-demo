@@ -1,0 +1,66 @@
+p {
+    color: orange;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+// All paragraphs outside of sections should be orange
+
+// all paragraphs inside sections to be blue
+
+// All text inside sections to be arial
+
+// All spans inside paragraphs inside sections to be bold
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    p {
+        color: blue;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+// In CSS this would be 4 different codes
+
+// section {
+//     font-family: Arial, Helvetica, sans-serif;
+//   }
+//   section p {
+//     color: blue;
+//   }
+//   section p span {
+//     font-weight: bold;
+//   }
+
+// .btn {
+//     background-color: rebeccapurple;
+//     cursor: pointer;
+//     color: white;
+// }
+
+// .btn:hover {
+//     background-color: white;
+//     border: 1px solid purple;
+//     color: rebeccapurple;
+//     transition: 0.1s;
+// }
+
+// However style contained in the button class
+.btn {
+    background-color: rebeccapurple;
+    cursor: pointer;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        border: 2px solid rebeccapurple;
+        color: rebeccapurple;
+        transition: 0.1s;
+    }
+}
+
+// & represents for whatever is inside
