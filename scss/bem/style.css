@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  color: white;
+  background-color: blue;
+}
+.btn--secondary {
+  background-color: lightblue;
+}
+.btn--danger {
+  background-color: red;
+}
+.btn__text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+.btn__text--bold {
+  font-weight: bold;
+}
+.btn__text--italic {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */
