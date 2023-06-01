@@ -1,0 +1,36 @@
+main {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+
+    /* Justify content examples */
+    justify-content: center; /* horizontal left to right x axis*/
+
+    /* justify-content: flex-start; default */
+
+    /* justify-content: space-between; create space between the elements */
+
+    /* justify-content: space-around; creates some space around the elements */
+
+    align-items: center; /* top to bottom y axis */
+
+    flex-wrap: wrap; /* as soon as not enough space, the cards jump to the next row */
+}
+
+div {
+    background-color: pink;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* move something around, parent needs to be flex (to be able to move the children around). */
+
+.green {
+    background-color: green;
+}
+
+/* p {
+    text-align: center;
+} */
