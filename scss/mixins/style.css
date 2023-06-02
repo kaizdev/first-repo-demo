@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  justify-content: flex-start;
+}
+
+section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section div {
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */

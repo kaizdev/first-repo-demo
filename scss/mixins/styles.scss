@@ -1,0 +1,14 @@
+@use "mixins";
+
+nav {
+    @include mixins.flex(flex-start); // specify a value
+    @include mixins.black-border;
+    justify-content: flex-start; // We can over-ride settings if required but it will show twice in the compiled CSS
+}
+
+section {
+    @include mixins.flex(flex-start); //default option can be set (center)
+    div {
+        @include mixins.black-border;
+    }
+}

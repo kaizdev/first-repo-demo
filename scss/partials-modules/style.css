@@ -1,0 +1,39 @@
+.header {
+  font-family: "Times New Roman", Times, serif;
+}
+.header__main-heading {
+  color: #4c2c7c;
+}
+
+.content {
+  font-weight: 500;
+}
+.content__subheading {
+  color: #f64488;
+}
+.content__text {
+  text-align: center;
+}
+
+.footer a {
+  text-align: none;
+  color: #4c2c7c;
+}
+.footer a:visited {
+  color: black;
+}
+.footer a:hover {
+  color: #f64488;
+}
+
+span {
+  color: red;
+}
+
+.btn {
+  background-color: #4c2c7c;
+  color: rgb(25, 25, 174);
+  border: 2px solid #4c2c7c;
+}
+
+/*# sourceMappingURL=style.css.map */

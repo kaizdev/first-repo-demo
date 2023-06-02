@@ -1,0 +1,24 @@
+// @import "./theme/theme";
+// ! Note that import will be deprecated soon (est 2024.)
+// ^ Import is now replaced with @use . Now using modules
+
+// @use "./theme/theme" as t;
+
+// .main-heading {
+//     color: t.$brand-purple;
+// }
+
+// .btn {
+//     background-color: t.$brand-pink;
+// }
+
+@use "./theme/theme" as theme;
+@use "./modules/header.scss";
+@use "./modules/main.scss";
+@use "./modules/footer.scss";
+
+.btn {
+    background-color: theme.$brand-purple;
+    color: rgb(25, 25, 174);
+    border: theme.$border-thickness solid theme.$brand-purple;
+}

@@ -1,0 +1,48 @@
+$primary: #4d97cc39;
+$secondary: #00d5ffe1;
+$success: #a6e4a6;
+$danger: #ff0000de;
+$test: #90ee90;
+$win: pink;
+$padding-small: 5px;
+$padding-large: 50px;
+$margin-large: 50px;
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    background-color: $primary;
+
+    &--secondary {
+        background-color: $secondary;
+        padding: $padding-small;
+    }
+    &--danger {
+        background-color: $danger;
+        padding: $padding-large;
+        // margin: $margin-large;
+    }
+    &__text {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+
+        &--bold {
+            font-weight: bold;
+        }
+
+        &--italic {
+            font-style: italic;
+        }
+    }
+}
+
+.heading {
+    &--primary {
+        color: $primary;
+    }
+    &--secondary {
+        color: $secondary;
+    }
+}

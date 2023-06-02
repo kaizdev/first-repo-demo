@@ -1,0 +1,19 @@
+// Let VS code auto complete using `` and ../ ./
+@use "../theme/theme" as theme;
+
+.footer {
+    a {
+        text-align: none;
+        color: theme.$brand-purple;
+    }
+    a:visited {
+        color: black;
+    }
+    a:hover {
+        color: theme.$brand-pink;
+    }
+}
+
+span {
+    color: red;
+}

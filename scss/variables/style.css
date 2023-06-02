@@ -1,0 +1,34 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  color: white;
+  background-color: rgba(77, 151, 204, 0.2235294118);
+}
+.btn--secondary {
+  background-color: rgba(0, 213, 255, 0.8823529412);
+  padding: 5px;
+}
+.btn--danger {
+  background-color: rgba(255, 0, 0, 0.8705882353);
+  padding: 50px;
+}
+.btn__text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+.btn__text--bold {
+  font-weight: bold;
+}
+.btn__text--italic {
+  font-style: italic;
+}
+
+.heading--primary {
+  color: rgba(77, 151, 204, 0.2235294118);
+}
+.heading--secondary {
+  color: rgba(0, 213, 255, 0.8823529412);
+}
+
+/*# sourceMappingURL=style.css.map */
