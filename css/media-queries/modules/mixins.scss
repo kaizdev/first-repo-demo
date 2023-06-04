@@ -1,0 +1,31 @@
+@use "./breakpoints" as b;
+
+@mixin phone {
+    @media only screen and (max-width: b.$small) {
+        @content; // anything inside the mixin will be inside the media
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: (b.$small + 1px)) and (max-width: b.$medium) {
+        @content;
+    }
+}
+
+@mixin landscape-tablet {
+    @media only screen and (min-width: (b.$medium + 1px)) and (max-width: b.$large) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media only screen and (min-width: (b.$large + 1px)) and (max-width: b.$x-large) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: (b.$x-large + 1px)) {
+        @content;
+    }
+}
