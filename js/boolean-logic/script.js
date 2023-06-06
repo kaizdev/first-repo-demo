@@ -66,3 +66,7 @@ console.log(`Welcome, ${loggedInUser || "Guest"}`);
 console.log(null || 0);
 
 console.log("hello" && "hi" && "nology"); // gives the last one nology
+
+//* Check this
+console.log(true * false); // returns false (presumably because false is 0)
+console.log(true + false); // returns true (presumably because true is 1)
