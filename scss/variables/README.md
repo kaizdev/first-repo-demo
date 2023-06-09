@@ -20,13 +20,15 @@ $primary: red;
 $danger: red;
 
 .btn {
-    color: $primary &--danger {
+    color: $primary;
+    &--danger {
         color: $danger;
     }
 }
 
 .heading {
-    color: $primary &--danger {
+    color: $primary;
+    &--danger {
         color: $danger;
     }
 }
