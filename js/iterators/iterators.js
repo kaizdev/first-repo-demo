@@ -96,3 +96,42 @@ console.log(anotherDoubleNums, "double numbers with map");
 // we know that with arrow functions, we can skip {} and return if it is a one line function
 const oneLineDoubleNums = numbers.map((number) => number * 2);
 console.log(oneLineDoubleNums);
+
+const stringArr = ["hello", "hi", "nology"];
+const mappedStringArr = stringArr.map((element, index, arr) => {
+    //map has 3 parameters that it can take/
+    console.log(element, "first param of call back");
+    console.log(
+        index,
+        "this is the current index I am at, the second param of map"
+    );
+    console.log(arr, "this is the third param");
+});
+
+//* Filter
+// Returns a NEW array, but only certain items back (different size array)
+// returns items that meet a certain condition
+// takes in a callback function
+// the function we pass to filter returns a single TRUE or FALSE for each element of the array
+// if true, element in the new array - if false, element won't bne in the new array
+// returns an array where the result was TRUTHY
+
+const numbersToFilter = [2, 3, 4, 5, 9];
+
+function isEven(num) {
+    return num % 2 === 0;
+}
+
+const filteredNumbers = numbersToFilter.filter(isEven);
+console.log(filteredNumbers);
+
+const numsGreaterThanFour = numbersToFilter.filter((num) => num > 4);
+console.log(numsGreaterThanFour);
+
+const words = ["apple", "table", "pen", "cup"];
+const threeLetterWords = words.filter((word) => word.length === 3);
+console.log(threeLetterWords);
+
+const scores = [8, 9, 10, 12];
+const scoresGreaterThanNine = scores.filter((num) => num > 9);
+console.log(scoresGreaterThanNine);
