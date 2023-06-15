@@ -68,3 +68,5 @@ console.log(Math.ceil(num));
 
 let num2 = 1.2345678;
 console.log(num2.toFixed(2));
+
+console.log(-2 % 5);

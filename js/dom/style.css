@@ -1,0 +1,50 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.heading--dark-mode {
+    color: wheat;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.body--dark-mode {
+    background-color: darkblue;
+}
+
+.btn {
+    background-color: darkblue;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 2px solid darkblue;
+    margin: 6px;
+}
+
+.btn--dark-mode {
+    color: darkblue;
+    background-color: wheat;
+    border-color: wheat;
+}
+
+.container {
+    border: 4px solid darkblue;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.container--dark-mode {
+    border-color: wheat;
+}
