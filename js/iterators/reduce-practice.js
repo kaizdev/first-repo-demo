@@ -6,17 +6,23 @@ console.log(sumNumArr, "- Sum of an array");
 //2 Product of an array: Use reduce to find the product of all numbers in an array.
 const prodArr = [1, 2, 3, 4, 5];
 const prodArrReduce = prodArr.reduce((acc, curr) => {
-    console.log({ acc, curr });
+    // console.log({ acc, curr });
     return acc * curr;
 });
 
 console.log(prodArrReduce);
 
 //3 Largest number: Use reduce to find the largest number in an array.
-// Largest number: [44, 16, 78, 4, 66, 31]
+const largestNums = [44, 16, 78, 4, 66, 31];
+const findLargestNum = largestNums.reduce((acc, curr) => {
+    // console.log({ acc, curr });
+    return curr > acc ? curr : acc;
+}, 0);
+
+console.log(findLargestNum);
 
 //4 Counting instances: Use reduce to count the number of times each element appears in an array.
-// Counting instances: ['apple', 'banana', 'apple', 'orange', 'banana', 'banana']
+const fruit = ["apple", "banana", "apple", "orange", "banana", "banana"];
 
 //5 Flatten an array: If you have an array of arrays, use reduce to flatten it into a single array.
 // Flatten an array: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
