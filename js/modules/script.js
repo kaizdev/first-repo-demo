@@ -47,3 +47,5 @@ form.addEventListener("submit", (event) => {
 //     newP.appendChild(textNode);
 //     document.querySelector("#area").appendChild(newP);
 // });
+
+console.log(rectPerim(2, 3));
