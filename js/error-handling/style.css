@@ -1,0 +1,13 @@
+p {
+    padding: 3px 6px;
+}
+
+.success {
+    color: green;
+    background-color: rgb(148, 224, 148);
+}
+
+.error {
+    color: red;
+    background-color: rgb(223, 154, 154);
+}
