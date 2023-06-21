@@ -1,3 +1,5 @@
+// Wed - 21/06/2023
+
 // A function that randomly rejects or resolves a promise
 
 // random dinner generator

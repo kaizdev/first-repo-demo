@@ -39,6 +39,8 @@ const rememberLocation = (name) => {
     });
 };
 
+// need the value of the previous promise as a parameter - that is why the name .then comes first
+// the only place we can access nam,e is inside the name.then, then the only place we can access location, is inside the location. then
 rememberName("Cal")
     .then((name) => {
         console.log(`Hi, ${name}, how are you?`);
