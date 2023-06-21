@@ -64,7 +64,7 @@ console.log("I am after setTimeout"); // 2
 // it might happen - but it also might not happen
 // we don't know the outcome of the promise, until a specified time in the future
 
-// Promises represents the outcome of an asynchronous operation (e.g. setTimeout)
+// Promises represents the outcome of an asynchronous operation (e.g. setTimeout) - happens in the background while rest of code can run
 // Promises are special objects that have 3 states:
 /*
     1. fulfilled - things went right
@@ -92,3 +92,5 @@ console.log("I am after setTimeout"); // 2
 
 // an API is like a waiter in a restaurant. [diner <-> waiter <-> chef]
 // ordering some data from the database via an API, which is why we have promises (pending... then either fulfilled or rejected)
+
+// in real life, you will rarely create promises yourself using new Promise, you will most likely consume promises
