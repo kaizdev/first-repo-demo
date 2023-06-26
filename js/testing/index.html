@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./rectangeArea.js" defer></script>
+        <title>Unit Testing</title>
+    </head>
+    <body>
+        <!--* 1. What is unit testing? -->
+        <!-- Unit testing - A small , isolated piece of our code, usually a function -->
+        <!-- Given some inputs - gives the expected return, or error (if wrong info) -->
+        <!-- JEST - a js testing library -->
+
+        <!--* 2. Why do we test our code? -->
+        <!-- Make sure that it works as intended. Check if there are any bugs -->
+        <!-- Test functions with different inputs -->
+        <!-- Verify the correctness of our code and detect bugs early -->
+        <!-- Tests are something we do in the development phase -->
+        <!-- Jest is a development dependency -->
+        <!-- Makes code easier to maintain and refactor -->
+        <!-- Good tests work as documentation (spec for what the function should be doing) -->
+
+        <!--* 3. What is TDD? -->
+        <!-- Test driven development -->
+        <!-- Write tests before writing the code e.g. todo app - requirements for what the app does-->
+        <!-- Allow user to add new todo, allow user to delete todo, etc. -->
+
+        <!--* 4. What are the advantages of TDD? -->
+        <!-- Early bug detection, code documentation -->
+        <!-- Easier to collaborate in a team -->
+        <!-- Forces us to think of every possible scenario -->
+        <!-- Different when thinking of the test first -> less bias when compared to code first, then test -->
+        <!-- We are forced to write function with less responsibility, that do one thing at a time, more modular -->
+
+        <!--* 5. How to set up tests? -->
+        <!-- 5.1 - Install Jest -->
+        <!-- 5.2 - Add the test:jest script to package.json -->
+        <!-- 5.3 - Install babel - compiler - translates one version of JS to a different version of JS. Tests run in node, and node uses exports like this: module.export = {something} -->
+        <!-- const myModule = require("./file") -->
+        <!-- myModule.something -->
+
+        <!-- Instead, babel allows browser import export -->
+        <!-- export const myFunction = () => {} -->
+        <!-- import {something} from "./file.js" -->
+        <!-- .4 - create a babel config js file -->
+    </body>
+</html>
