@@ -1,0 +1,51 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Portfolio",
+            "description": "A Portfolio about me",
+            "deployedLink": "https://netlify.com",
+            "githubLink": "https://github.com",
+            "techStack": ["HTML", "CSS", "SCSS"]
+        },
+        {
+            "id": 2,
+            "title": "FakeOs",
+            "description": "Replicate an operating system with JavaScript",
+            "deployedLink": "https://netlify.com",
+            "githubLink": "https://github.com",
+            "techStack": ["HTML", "SCSS", "JavaScript"]
+        },
+        {
+            "id": 3,
+            "title": "Morse Code",
+            "description": "A morse code translator built in JavaScript",
+            "deployedLink": "https://netlify.com",
+            "githubLink": "https://github.com",
+            "techStack": ["HTML", "SCSS", "JavaScript"]
+        },
+        {
+            "id": 4,
+            "title": "Google Books",
+            "description": "A google books search engine using React and Apis",
+            "deployedLink": "https://netlify.com",
+            "githubLink": "https://github.com",
+            "techStack": ["React", "SCSS"]
+        },
+        {
+            "id": 5,
+            "title": "E-commerce",
+            "description": "A shop",
+            "deployedLink": "https://netlify.com",
+            "githubLink": "https://github.com",
+            "techStack": ["React", "SCSS", "Firestore"]
+        },
+        {
+            "id": 6,
+            "title": "Minesweeper",
+            "description": "A cli version of minesweeper",
+            "githubLink": "https://github.com",
+            "techStack": ["Java"]
+        }
+    ]
+}
