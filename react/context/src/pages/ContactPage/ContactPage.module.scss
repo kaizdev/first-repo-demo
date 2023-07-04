@@ -1,0 +1,9 @@
+.main {
+    // background-color: black;
+    &_dark {
+        background-color: black;
+    }
+    &_light {
+        background-color: white;
+    }
+}

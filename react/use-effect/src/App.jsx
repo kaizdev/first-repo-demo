@@ -11,6 +11,7 @@ function App() {
 
     const handleSearch = (value) => {
         console.log("Searched for " + value);
+        setSearchTerm(value)
     };
 
     return (
@@ -20,8 +21,8 @@ function App() {
                 {showCounter ? "Hide Counter" : "Show Counter"}
             </button>
             {showCounter && <Clock />} */}
-            <SearchBar />
-            <JokeLoader />
+            <SearchBar  />
+            <JokeLoader searchTerm ={searchTerm} />
         </>
     );
 }

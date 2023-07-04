@@ -1,5 +1,6 @@
 import style from "./ProjectList.module.scss";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import LoadingSpinner from "../../components/LoadSpinner/LoadingSpinner";
 
 // const ProjectList = () => {
 //     return <section>{projects.map}</section>;
@@ -24,7 +25,7 @@ const ProjectList = ({ projects }) => {
                     })}
                 </section>
             ) : (
-                <p>Loading...</p>
+                <LoadingSpinner />
             )}
         </>
     );

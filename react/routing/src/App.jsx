@@ -8,6 +8,7 @@ import { getAllProjects } from "./services/project-services";
 import { useState, useEffect } from "react";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import ProjectPageLoader from "./containers/ProjectPageLoader/ProjectPageLoader";
+import ThankYou from "./pages/ThankYou/ThankYou";
 
 function App() {
     // we moved this from ProjectList (now App's responsibility and now pass it down via prop)
@@ -35,6 +36,7 @@ function App() {
                         element={<ProjectPageLoader />}
                     />
                     <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/thanks" element={<ThankYou />} />
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
                 {/* <footer>My Footer</footer> */}
