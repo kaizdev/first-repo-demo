@@ -61,7 +61,9 @@ async function fetchUser() {
     console.log(last);
 
     //& I want the name property - I want first and last to add it to my H2.
-    document.querySelector("h2").innerText = `${first} ${last}`;
+    document.querySelector(
+        "h2"
+    ).innerText = `${first} ${last} ${data.results[0].email}`;
 }
 
 // fetchUser();
