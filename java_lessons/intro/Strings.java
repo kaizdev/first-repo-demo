@@ -31,6 +31,7 @@ public class Strings {
 		// with casting we also overflow
 		short myBigShort = (short) 32769;
 		System.out.println(myBigShort);
+
 		
 		// int - -2,147,483,648 to 2,147,483,647. Use underscore as thousands separators
 		int myInt = 12_345_135;
