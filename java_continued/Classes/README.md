@@ -27,10 +27,17 @@ Scope refers to the access, could be public or private or protected
 ```
 
 ```java
-// Person.java
+  //Person.java
+  class Person {
 
-class Person {
-
-}
-
+  }
 ```
+
+### Scopes Table
+
+| Access Modifier       | Within Class | Within Package | Outside Package | Outside Package (inheritance) |
+| --------------------- | ------------ | -------------- | --------------- | ----------------------------- |
+| Public                | Y            | Y              | Y               | Y                             |
+| Protected             | Y            | Y              | N               | Y                             |
+| Default (no modifier) | Y            | Y              | N               | N                             |
+| Private               | Y            | N              | N               | N                             |

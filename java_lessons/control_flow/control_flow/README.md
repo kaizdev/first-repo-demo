@@ -47,14 +47,13 @@ console.log(`Hello ${name || "guest"}`);
 // default to guest if name does not exist
 ```
 
-In Java we'd have to write:
+In Java we'd have to write
 
 ```java
-String name = null;
-if(name == null) {
-    System.out.println("Hello guest")
-} else {
-
-}
-
+  String name = null;
+  if(name == null) {
+    System.out.println("Hello guest");
+  } else {
+    System.out.println("Hello " + name);
+  }
 ```
