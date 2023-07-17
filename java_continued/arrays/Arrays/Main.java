@@ -54,5 +54,36 @@ public class Main {
     System.out.println(Arrays.toString(ArrayUtils.updateArray(array2)));
     System.out.println(Arrays.toString(ArrayUtils.reverseArray(array3)));
     System.out.println(Arrays.toString(ArrayUtils.reverseArray(array2)));
+
+    // for loops - equivalent to javascript for of
+    for (String name : names) {
+      System.out.println(name);
+    }
+
+    // multi dimensional arrays
+    // one way
+    int[][] grid = { { 1, 2 }, { 3, 4 } };
+    for (int i = 0; i < grid.length; i++) {
+      int[] row = grid[i];
+      for (int j = 0; j < row.length; j++) {
+        System.out.println("The value is " + row[j]);
+      }
+    }
+    // other way using nested for loops
+    // for (int i = 0; i < grid.length; i++) {
+    //   for (int j = 0; j < grid[i].length; j++) {
+    //     System.out.println("The value is " + grid[i][j]);
+    //   }
+    // }
+
+    //     int a, b, c, d;
+    // a, b = 2;
+    // c = 3;
+    // d = 4;
+
+    // int [][][][] fourDArray = new int[a][b][c][d];
+
+    // Use for loops to fill this multi dimensional array with incremented values
+
   }
 }
