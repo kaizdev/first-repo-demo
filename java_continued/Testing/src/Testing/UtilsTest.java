@@ -34,7 +34,7 @@ public class UtilsTest {
   public void divide_TwoPositiveDoubles_ReturnsCorrectResult() {
     double expectedResult = 10.0;
     double actualResult = Utils.divide(100.00, 10.00);
-    assertEquals(expectedResult, actualResult, actualResult); //todo: review this
+    assertEquals(expectedResult, actualResult, 0); //todo: review this
     // assertEquals(2.0, Utils.divide(4.0, 2.0));
   }
 
