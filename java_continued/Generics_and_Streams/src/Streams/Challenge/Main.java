@@ -28,6 +28,9 @@ public class Main {
       .collect(Collectors.toCollection(ArrayList::new));
     System.out.println(booksUppercase);
 
+    // using getters and setters (private class fields)
+    // ArrayList<String> upperCaseTitles = bookCollection.stream().map((book) -> book.getTitle().toUpperCase()).collect(Collectors.toCollection(ArrayList::new));
+
     // print out the items from the book (example)
     // note - did an override in the Book class to return the toString()
     bookCollection.stream().map(Book::toString).forEach(System.out::println);
@@ -41,6 +44,10 @@ public class Main {
 
     System.out.println(booksAfter2000);
 
+    // print out all the books from the filter
+    System.out.println("Printed using the filter");
+    booksAfter2000.stream().forEach(book -> book.printBookDetails());
+
     // int that will store the value of all pages of the books combined
     // Going from ArrayList of books -> int : will need combiner function
     int totalBookPages = bookCollection
@@ -51,7 +58,7 @@ public class Main {
     // find the book with the highest amount of pages (try and use reduce or look for other methods)
     Optional<Book> maxPagesBook = bookCollection
       .stream()
-      .reduce((book1, book2) -> book1.pages > book2.pages ? book1 : book2);
+      .reduce((book1, book2) -> book1.pages > book2.pages ? book1 : book2); //we could also put first reduce param (initial value as the first book bookCollection.get(0))
 
     if (maxPagesBook.isPresent()) {
       System.out.println(maxPagesBook.get()); // add .get(), otherwise prints "optional" at the front
@@ -62,5 +69,6 @@ public class Main {
       .stream()
       .max(Comparator.comparingInt(book -> book.pages));
     System.out.println(maxPagesBook_usingMax.get()); // Title: Money, Pages: 2000, Author: Adam Smith, Publish Year: 1980
+    // Book maxPages = bookCollection.stream().max((b1, b2)-> Integer.compare(b1.getPages(), b2.getPages())).orElse(book1);
   }
 }

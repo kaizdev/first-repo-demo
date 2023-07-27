@@ -27,6 +27,16 @@ public class Book {
       yearPublished
     );
   }
+
+  public void printBookDetails() {
+    System.out.printf(
+      "Title is: %s, pages: %d, Author: %s, Year Published: %d\n",
+      this.title,
+      this.pages,
+      this.author,
+      this.yearPublished
+    );
+  }
 }
 // Create a class Book
 // each book should have a title, pages, author, yearPublished

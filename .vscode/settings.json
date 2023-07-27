@@ -22,5 +22,13 @@
     "files.exclude": {
         "java_lessons/intro/Challenge.class": true
     },
-    "cSpell.words": ["curr", "staticly"]
+    "cSpell.words": ["curr", "staticly"],
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "test-lib4/junit-platform-console-standalone-1.10.0.jar",
+            "test-lib4/**/*.jar"
+        ],
+        "exclude": ["lib/junit-4.13.2.jar"]
+    }
 }

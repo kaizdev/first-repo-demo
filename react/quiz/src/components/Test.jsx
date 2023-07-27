@@ -21,7 +21,7 @@ const Counter = ({ initial }) => {
 const Quantity = ({ onChange }) => {
     const [qty, setQty] = useState(100);
 
-    const handleIncrement = () => {
+    const crement = () => {
         setQty(qty + 2);
         onChange(qty);
     };
