@@ -1,4 +1,12 @@
-import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
+import {
+  Collection,
+  Entity,
+  ManyToMany,
+  PrimaryKey,
+  Property,
+} from '@mikro-orm/core';
+import { Expose } from 'class-transformer';
+import { PokemonType } from './pokemon-type.entity';
 
 @Entity()
 export class Pokemon {
@@ -7,8 +15,12 @@ export class Pokemon {
 
   @Property({ unique: true })
   name: string;
-  @Property()
-  type: string;
+
+  // @Property()
+  @ManyToMany(() => PokemonType, (type) => type.pokemon)
+  types = new Collection<PokemonType>(this); // a collection of pokemon types
+  // type: string;
+
   @Property()
   hp: number;
   @Property()
@@ -16,5 +28,6 @@ export class Pokemon {
   @Property({ nullable: true })
   evolutionID: number;
   @Property()
+  @Expose({ name: 'level' }) // when using plainToInstance -> do something with this value -> sort of like modelMapper
   level: number;
 }

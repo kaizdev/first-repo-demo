@@ -1,4 +1,7 @@
 import {
+  ArrayMaxSize,
+  ArrayMinSize,
+  IsArray,
   IsEnum,
   IsNotEmpty,
   IsNumber,
@@ -9,25 +12,25 @@ import {
   MinLength,
 } from 'class-validator';
 
-enum PokemonType {
-  FIRE = 'fire',
-  WATER = 'water',
-  GRASS = 'grass',
-  ELECTRIC = 'electric',
-  ICE = 'ice',
-  FIGHTING = 'fighting',
-  POISON = 'poison',
-  GROUND = 'ground',
-  FLYING = 'flying',
-  PSYCHIC = 'psychic',
-  BUG = 'bug',
-  ROCK = 'rock',
-  GHOST = 'ghost',
-  DARK = 'dark',
-  DRAGON = 'dragon',
-  STEEL = 'steel',
-  FAIRY = 'fairy',
-}
+// enum PokemonType {
+//   FIRE = 'fire',
+//   WATER = 'water',
+//   GRASS = 'grass',
+//   ELECTRIC = 'electric',
+//   ICE = 'ice',
+//   FIGHTING = 'fighting',
+//   POISON = 'poison',
+//   GROUND = 'ground',
+//   FLYING = 'flying',
+//   PSYCHIC = 'psychic',
+//   BUG = 'bug',
+//   ROCK = 'rock',
+//   GHOST = 'ghost',
+//   DARK = 'dark',
+//   DRAGON = 'dragon',
+//   STEEL = 'steel',
+//   FAIRY = 'fairy',
+// }
 
 export class CreatePokemonDTO {
   @IsNotEmpty()
@@ -35,8 +38,12 @@ export class CreatePokemonDTO {
   @MinLength(2)
   name: string;
 
-  @IsEnum(PokemonType)
-  type: string;
+  // @IsEnum(PokemonType)
+  // type: string;
+  @IsArray()
+  @ArrayMinSize(1)
+  @ArrayMaxSize(2)
+  pokemonTypeIds: number[];
 
   @IsNumber()
   @Min(5)

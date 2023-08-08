@@ -18,6 +18,10 @@ const config: MikroOrmModuleOptions = {
     pathTs: 'src/migrations',
     path: 'dist/migrations',
   },
+  seeder: {
+    pathTs: 'src/seeders',
+    path: 'dist/seeders',
+  },
 };
 
 export default config;
